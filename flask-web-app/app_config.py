@@ -1,5 +1,12 @@
 import os
 
+os.environ.setdefault('B2C_TENANT_NAME','Seven Principles')
+os.environ.setdefault('SIGNUPSIGNIN_USER_FLOW','interactive')
+os.environ.setdefault('EDITPROFILE_USER_FLOW','interactive')
+os.environ.setdefault('RESETPASSWORD_USER_FLOW','interactive')
+os.environ.setdefault('AUTHORITY','FFS')
+os.environ.setdefault('CLIENT_ID','FFS')
+os.environ.setdefault('CLIENT_SECRET','FFS')
 
 if (os.getenv('B2C_TENANT_NAME')
     and os.getenv('SIGNUPSIGNIN_USER_FLOW') and os.getenv('EDITPROFILE_USER_FLOW')):
